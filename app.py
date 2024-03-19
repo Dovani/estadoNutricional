@@ -349,38 +349,39 @@ def obterEscoresZ(sexoObservado, primeiraParte, segundaParte, indice):
 
     
     return z
-"""
-@app.route('/salvar_planilha_cadastro')
-def salvar_planilha_cadastro():
-    global alunos_cadastro
-    arquivo_nome = (alunos_cadastro[0]['Turma'])
-    # Cria um DataFrame pandas com os alunos
-    df_cadastro = pd.DataFrame(alunos_cadastro)
-    # Salva o DataFrame em uma planilha Excel
-    excel_filename = f'{arquivo_nome}.xlsx'
-    df_cadastro.to_excel(excel_filename, index=False)
 
-    # Limpa a lista temporária de alunos
-    alunos_cadastro.clear()
+# """
+# @app.route('/salvar_planilha_cadastro')
+# def salvar_planilha_cadastro():
+#     global alunos_cadastro
+#     arquivo_nome = (alunos_cadastro[0]['Turma'])
+#     # Cria um DataFrame pandas com os alunos
+#     df_cadastro = pd.DataFrame(alunos_cadastro)
+#     # Salva o DataFrame em uma planilha Excel
+    # excel_filename = f'{arquivo_nome}.xlsx'
+    # df_cadastro.to_excel(excel_filename, index=False)
+
+    # # Limpa a lista temporária de alunos
+#     alunos_cadastro.clear()
     
-    # Envia o arquivo Excel como resposta
-    return send_file(excel_filename, as_attachment=True)
+#     # Envia o arquivo Excel como resposta
+#     return send_file(excel_filename, as_attachment=True)
 
-@app.route('/salvar_planilha_upload')
-def salvar_planilha_upload():
-    global alunos_upload
-    arquivo_nome = (alunos_upload[0]['Turma'])
-    # Cria um DataFrame pandas com os alunos
-    df_upload = pd.DataFrame(alunos_upload)
-    # Salva o DataFrame em uma planilha Excel
-    excel_filename = f'{arquivo_nome}.xlsx'
-    df_upload.to_excel(excel_filename, index=False)
+# @app.route('/salvar_planilha_upload')
+# def salvar_planilha_upload():
+#     global alunos_upload
+#     arquivo_nome = (alunos_upload[0]['Turma'])
+#     # Cria um DataFrame pandas com os alunos
+#     df_upload = pd.DataFrame(alunos_upload)
+#     # Salva o DataFrame em uma planilha Excel
+#     excel_filename = f'{arquivo_nome}.xlsx'
+#     df_upload.to_excel(excel_filename, index=False)
 
-    # Limpa a lista temporária de alunos
-    alunos_upload.clear()
+#     # Limpa a lista temporária de alunos
+#     alunos_upload.clear()
     
-    # Envia o arquivo Excel como resposta
-    return send_file(excel_filename, as_attachment=True)"""
+#     # Envia o arquivo Excel como resposta
+#     return send_file(excel_filename, as_attachment=True)"""
 
 
 @app.route('/salvar_planilha_cadastro')
